@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Vishal Maratha | Full Stack Engineer</title>
+    <meta name="description"
+        content="Portfolio of Vishal Maratha, a Full Stack Engineer specialized in building high-performance, responsive, and visually stunning web applications using HTML, CSS, JavaScript, and modern frameworks.">
+    <meta name="keywords"
+        content="Vishal Maratha, Full Stack Engineer, Web Developer, Portfolio, Software Engineer, JavaScript, HTML, CSS, Frontend, Backend">
+    <meta name="author" content="Vishal Maratha">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="nav-logo">
+                <span>Vishal</span><span class="accent-dot">.</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-sec="home">Home</a>
+                <a href="#about" class="nav-link" data-sec="about">About</a>
+                <a href="#skills" class="nav-link" data-sec="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-sec="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-sec="contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle visual theme">
+                    <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                    <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                </button>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-indicator"></span>
+                        Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Vishal Maratha</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typing-text" class="typing-target"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        A passionate Full Stack Engineer specializing in designing and crafting responsive,
+                        pixel-perfect front-ends and robust, scalable back-ends. Let's build something extraordinary
+                        together.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glow-bg"></div>
+                    <div class="image-wrapper">
+                        <img src="assets/hero-graphic.jpg"
+                            alt="Creative abstract full stack engineering concept illustration" class="floating-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <span class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">My story, credentials, and details</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card-visual">
+                        <div class="glass-card visual-card">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="code-title">vishal.json</span>
+                            </div>
+                            <pre class="code-content"><code>{
+  <span class="key">"name"</span>: <span class="val">"Vishal Maratha"</span>,
+  <span class="key">"role"</span>: <span class="val">"Full Stack Engineer"</span>,
+  <span class="key">"location"</span>: <span class="val">"Indore, India"</span>,
+  <span class="key">"passions"</span>: [
+    <span class="val">"Crafting Clean UI"</span>,
+    <span class="val">"System Architecture"</span>,
+    <span class="val">"Optimizing Code"</span>
+  ],
+  <span class="key">"philosophy"</span>: <span class="val">"Simplicity is the ultimate sophistication."</span>
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="about-details">
+                        <h3 class="about-heading">Engineering digital experiences from end to end</h3>
+                        <p class="about-text">
+                            I focus on creating high-quality web applications that solve real-world problems. With my
+                            experience in front-end design systems and back-end architectures, I ensure that
+                            applications are not only beautiful but also performant and maintainable.
+                        </p>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Role</span>
+                                <span class="info-value">Full Stack Engineer</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Indore, India</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Education</span>
+                                <span class="info-value">B.Tech in Computer Science & Engineering</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Interests</span>
+                                <span class="info-value">Tech blogging, Open Source, UI/UX Design,Prompt
+                                    engineering.</span>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+                            <a href="https://1drv.ms/w/c/7c2acc4457fdde98/IQA5eAw28iGBQZHHdDb9lmMcAc5gtVnAKYcIPrSkNTMuCyo?e=KzJpwY"
+                                target="_blank" class="btn btn-outline" id="download-resume">
+                                <i data-lucide="download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">The tools, languages, and frameworks I use to bring ideas to life</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Category -->
+                    <div class="glass-card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper front">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3 / SASS</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Category -->
+                    <div class="glass-card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper back">
+                                <i data-lucide="server"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">REST APIs</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL & NoSQL</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Category -->
+                    <div class="glass-card skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper tools">
+                                <i data-lucide="settings"></i>
+                            </div>
+                            <h3>Developer Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / Dev Tools</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Webpack / Vite</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Deployment (Netlify)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Self-Initiated Project</h2>
+                    <p class="section-subtitle">Explore some of my recent work showcasing full-stack capabilities</p>
+                </div>
+
+                <div class="projects-grid projects-grid-featured">
+                    <!-- Project: Bill Box (Featured Card) -->
+                    <div class="project-card-featured glass-card">
+
+                        <!-- Left: Content Panel -->
+                        <div class="pf-content">
+                            <div class="pf-header">
+                                <span class="pf-badge">
+                                    <i data-lucide="star" class="pf-badge-icon"></i>
+                                    Self-Initiated Project
+                                </span>
+                                <span class="pf-live-pill">
+                                    <span class="pf-live-dot"></span>
+                                    Live
+                                </span>
+                            </div>
+
+                            <h3 class="pf-title">Bill Box</h3>
+                            <p class="pf-subtitle">Full-Stack Expense &amp; Bill Management Hub</p>
+                            <p class="pf-desc">
+                                A fully responsive, data-driven dashboard built to track, manage, and visualize bills
+                                and expenses. Features Supabase-backed persistent storage, real-time reminders,
+                                interactive charts, and a polished multi-page flow.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="pf-tags">
+                                <span class="tag tag-accent">React.js</span>
+                                <span class="tag">Vite</span>
+                                <span class="tag">Supabase</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+
+                            <!-- CTAs -->
+                            <div class="pf-ctas">
+                                <a href="https://bill-box-one.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary pf-cta-primary" id="billbox-live-demo">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Vishal742-arch/bill-box" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline pf-cta-secondary" id="billbox-github">
+                                    <i data-lucide="github"></i>
+                                    <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right: Features + Stats Panel -->
+                        <div class="pf-right">
+                            <!-- Feature highlights -->
+                            <ul class="pf-features">
+                                <li><i data-lucide="chart-pie"></i> Expense category breakdown with donut charts</li>
+                                <li><i data-lucide="bell"></i> Smart recurring bill reminders</li>
+                                <li><i data-lucide="database"></i> Supabase real-time database sync</li>
+                                <li><i data-lucide="trending-up"></i> Monthly trend &amp; history analytics</li>
+                                <li><i data-lucide="shield-check"></i> Secure auth with persistent sessions</li>
+                            </ul>
+
+                            <!-- Stats row -->
+                            <div class="pf-stats">
+                                <div class="pf-stat">
+                                    <span class="pf-stat-value">5+</span>
+                                    <span class="pf-stat-label">Modules</span>
+                                </div>
+                                <div class="pf-stat-divider"></div>
+                                <div class="pf-stat">
+                                    <span class="pf-stat-value">React</span>
+                                    <span class="pf-stat-label">Frontend</span>
+                                </div>
+                                <div class="pf-stat-divider"></div>
+                                <div class="pf-stat">
+                                    <span class="pf-stat-value">SaaS</span>
+                                    <span class="pf-stat-label">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Have a Project in Mind?</h2>
+                    <p class="section-subtitle">Let's discuss how we can work together on your next challenge</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards">
+                        <!-- Social Card -->
+                        <div class="glass-card contact-info-card social-connect-card">
+                            <div class="contact-details-box">
+                                <h4>Connect with me</h4>
+                                <div class="social-links-grid">
+                                    <a href="https://www.linkedin.com/in/vishal-maratha2002" target="_blank"
+                                        rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            class="linkedin-icon">
+                                            <circle cx="12" cy="12" r="12" fill="#0062c4" />
+                                            <path
+                                                d="M7.5 19h-2.8V10h2.8v9zM6.1 8.8C5.2 8.8 4.5 8.1 4.5 7.2s.7-1.6 1.6-1.6 1.6.7 1.6 1.6-.7 1.6-1.6 1.6zm12.9 10.2h-2.8v-4.4c0-1.1 0-2.4-1.5-2.4-1.5 0-1.7 1.2-1.7 2.3v4.5h-2.8V10h2.7v1.2h.1c.4-.7 1.3-1.4 2.6-1.4 2.8 0 3.3 1.8 3.3 4.2v5z"
+                                                fill="#ffffff" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://github.com/Vishal742-arch" target="_blank"
+                                        rel="noopener noreferrer" aria-label="GitHub Profile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="github-icon">
+                                            <circle cx="12" cy="12" r="12" fill="#000000" />
+                                            <path
+                                                d="M12 4c-4.42 0-8 3.58-8 8 0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38C17.71 18.53 20 15.54 20 12c0-4.42-3.58-8-8-8z"
+                                                fill="#ffffff" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://wa.me/918817584853?text=Hello%20Vishal%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20or%20opportunity%20with%20you."
+                                        target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Chat">
+                                        <img src="assets/whatsapp-logo.png" alt="WhatsApp Logo" class="whatsapp-icon"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="glass-card contact-info-card">
+                            <div class="contact-icon-box">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details-box">
+                                <h4>Email Me</h4>
+                                <a href="mailto:vishalmaratha286@gmail.com">vishalmaratha286@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="glass-card contact-info-card">
+                            <div class="contact-icon-box">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details-box">
+                                <h4>Location</h4>
+                                <p>Indore, India</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="glass-card contact-info-card">
+                            <div class="contact-icon-box">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details-box">
+                                <h4>Phone Call</h4>
+                                <a href="tel:+917354238547">+91 7354238547</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: WhatsApp -->
+                        <!-- <div class="glass-card contact-info-card"> -->
+                        <!-- <div class="contact-icon-box"> -->
+                        <!-- <img src="assets/whatsapp-logo.png" alt="WhatsApp Icon" -->
+                        <!-- style="width: 24px; height: 24px; object-fit: contain;"> -->
+                        <!-- </div> -->
+                        <!-- <div class="contact-details-box" -->
+                        <!-- style="display: flex; flex-direction: column; align-items: flex-start; width: 100%;"> -->
+                        <!-- <h4>WhatsApp</h4> -->
+                        <!-- <a href="https://wa.me/918817584853?text=Hello%20Vishal%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20or%20opportunity%20with%20you." -->
+                        <!-- target="_blank" rel="noopener noreferrer" -->
+                        <!-- class="btn btn-secondary contact-whatsapp-btn" -->
+                        <!-- style="padding: 10px 20px; font-size: 0.9rem; margin-top: 8px; display: inline-flex; align-items: center; gap: 8px;" -->
+                        <!-- aria-label="Chat with Vishal on WhatsApp"> -->
+                        <!-- <img src="assets/whatsapp-logo.png" alt="" -->
+                        <!-- style="width: 16px; height: 16px; object-fit: contain;">
+                                    <span>Chat on WhatsApp</span>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="glass-card contact-form-card">
+                        <form id="contact-form" action="https://formsubmit.co/vishalmaratha286@gmail.com" method="POST"
+                            autocomplete="off" novalidate>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                    <span class="error-msg" id="name-error">Name is required</span>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                    <span class="error-msg" id="email-error">Please enter a valid email</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group text-area-group">
+                                <textarea id="message" name="message" required rows="5" placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="error-msg" id="message-error">Message cannot be empty</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send" class="btn-icon"></i>
+                            </button>
+
+                            <div class="form-feedback" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Vishal Maratha. All rights reserved.</p>
+            <a href="#home" class="scroll-top-btn" aria-label="Scroll to top">
+                <i data-lucide="chevrons-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>

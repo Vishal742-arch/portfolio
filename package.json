@@ -1,0 +1,13 @@
+{
+  "name": "vishal-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "http-server -p 8080"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "lambda-multipart-parser": "^1.0.1",
+    "openai": "^4.55.0"
+  }
+}
